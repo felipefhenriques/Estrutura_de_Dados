@@ -33,7 +33,7 @@ public class ex04Inverter {
             System.out.print("Digite um inteiro e positivo: ");
             n = valor.nextInt();
             
-        }while(n < 0 || n>100);
+        }while(n < 0 || n>1000);
         return n;
     }
 
