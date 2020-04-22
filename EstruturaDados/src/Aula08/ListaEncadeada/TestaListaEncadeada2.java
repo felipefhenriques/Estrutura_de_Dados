@@ -3,26 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula06.ListaEncadeada;
-
-import Aula07.ListaEncadeada.ListaEncadeada;
+package Aula08.ListaEncadeada;
 
 /**
  *
  * @author felipeferreira
  */
-public class TestalistaEncadeada {
+public class TestaListaEncadeada2 {
     
     public static void main(String[] args) {
-//        No p = new No(7, null);
-//        System.out.println(p);
-//        System.out.println(p.getElemento());
-//        No q = new No(5,p);
-//        System.out.println(q);
-//        No r = new No(9,q);
-//        System.out.println(r);
-
-          ListaEncadeada list = new ListaEncadeada();
+        ListaEncadeada2 list = new ListaEncadeada2();
           System.out.println(list.vazia());
           
           list.insereInicio(34);
@@ -41,15 +31,27 @@ public class TestalistaEncadeada {
           
           list.insereFinalRec(90);
           list.insereFinalRec(95);
+          System.out.println("Inserido no final: ");
           System.out.println(list);
+          // -------
           list.insereOrdenadoRec(1);
           list.insereOrdenadoRec(56);
-          list.insereOrdenadoRec(102);
+//          list.insereOrdenadoRec(102);
+          System.out.println("Inseridos de forma ordenada: ");
           System.out.println(list);
+          System.out.println("Remover do início: ");
+          list.removeInicio();
+          System.out.println(list);
+          System.out.println("Remover do final: ");
+          list.removeFinal();
+          System.out.println(list);
+          System.out.println("Remover ordenado ");
+          list.removeOrdenado(3); // remove inicio
+          list.removeOrdenado(40); // remove meio
+          list.removeOrdenado(90); // remove final
+          // list.removeOrdenado(30); // remove sem estar na lista
+          System.out.println(list);
+          System.out.println(list.quantidadeNos());
     }
-    
-    
-    
-    
     
 }
