@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula02.Vetores;
+package Aula02_Vetores;
 
 
-import static Aula02.Vetores.ex07_buscaLinear.buscaLinear;
+import static Aula02_Vetores.ex07_buscaLinear.buscaLinear;
 
 
 /**

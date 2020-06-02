@@ -5,7 +5,7 @@
  */
 package Aula04.Recursividade;
 
-import static Aula02.Vetores.ex04Inverter.isInteiroPositivo;
+import static Aula02_Vetores.ex04Inverter.isInteiroPositivo;
 
 /**
  *

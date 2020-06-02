@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula02.Vetores;
+package Aula02_Vetores;
 
 import java.util.Scanner;
 

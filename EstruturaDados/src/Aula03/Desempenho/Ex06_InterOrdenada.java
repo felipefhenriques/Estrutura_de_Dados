@@ -5,10 +5,10 @@
  */
 package Aula03.Desempenho;
 
-import static Aula02.Vetores.ex04Inverter.exibeVetor;
-import static Aula02.Vetores.ex04Inverter.isInteiroPositivo;
-import static Aula02.Vetores.ex04Inverter.leVetor;
-import static Aula02.Vetores.ex04Inverter.leVetorAleatorio;
+import static Aula02_Vetores.ex04Inverter.exibeVetor;
+import static Aula02_Vetores.ex04Inverter.isInteiroPositivo;
+import static Aula02_Vetores.ex04Inverter.leVetor;
+import static Aula02_Vetores.ex04Inverter.leVetorAleatorio;
 
 /**
  *
