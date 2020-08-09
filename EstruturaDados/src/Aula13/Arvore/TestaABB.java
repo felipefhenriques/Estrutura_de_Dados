@@ -66,6 +66,11 @@ public class TestaABB {
         tree.inOrdem();
         System.out.println("");
         
+        System.out.println("Sucessor de 2 é: " + tree.sucessor(tree.buscaR(2)));
+        //System.out.println("Sucessor de 8 é: " + tree.sucessor(tree.buscaR(8)));
+        //System.out.println("Sucessor de 7 é: " + tree.sucessor(tree.buscaR(7)));
+        System.out.println("O antecessor de 8 é: " + tree.antecessor(tree.buscaR(8)));
+        
     }
     
 }

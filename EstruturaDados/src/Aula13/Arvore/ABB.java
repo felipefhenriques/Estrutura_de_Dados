@@ -242,7 +242,53 @@ public class ABB {
                    return null;
             }
             return p;
-        };  
+        }
+    
+    public No sucessor(No p){
+        if(p.getDir() != null)
+            return menorR(p.getDir());
+        
+        
+        return ancestralDireita(p);
+    }
+    
+    private No ancestralDireita(No p){
+        No sucessor = null;
+        No temp = raiz;
+        
+        while(temp.getElemento() != p.getElemento()){
+            if(p.getElemento() < temp.getElemento()){
+                sucessor = temp;
+                temp = temp.getEsq();
+            } else {
+                temp.getDir();
+            }
+        }
+        return sucessor;
+    }
+    
+    public No antecessor(No p){
+        if(p.getDir() != null){
+            return menorR(p.getDir());
+        }
+        
+        return ancestralEsquerda(p);
+    }
+    
+    private No ancestralEsquerda(No p){
+        No antecessor = null;
+        No temp = raiz;
+        
+        while(temp.getElemento() != p.getElemento()) {
+            if(p.getElemento()<temp.getElemento()){
+                antecessor = temp;
+                temp = temp.getDir();
+            } else {
+                temp = temp.getEsq();
+            }
+        }
+        return antecessor;
+    }
 
     @Override
     public String toString() {
